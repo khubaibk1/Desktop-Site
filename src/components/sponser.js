@@ -1,9 +1,9 @@
 const Sponser = () => {
   return (
     <>
-      <div className="w-full h-[120px] flex justify-center pt-[14px]">
-        <div className="flex flex-row w-[80%] h-[90px] items-center justify-around ">
-          <div>
+      <div className="w-full sm:h-[120px] h-[70px] flex justify-center pt-[14px]">
+        <div className="flex flex-row sm:w-[80%] w-[100%] sm:h-[90px] h-[45px] items-center justify-around ">
+          <div >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="172"
@@ -161,6 +161,16 @@ const Sponser = () => {
                 fill="#231F20"
               />
             </svg>
+            <style>
+        {`
+          @media (max-width: 768px) {
+            
+            svg {
+              width: 55px;
+            }
+          }
+        `}
+      </style>
           </div>
         </div>
       </div>

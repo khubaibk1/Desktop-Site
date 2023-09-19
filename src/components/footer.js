@@ -1,40 +1,40 @@
 const Footer = () => {
   return (
     <>
-      <div className="bg-[url('/images/footer-leaves-right.png')] bg-no-repeat h-[253px] bg-right-bottom ">
+      <div className="w-full   bg-[url('/images/footer-leaves-right.png')] bg-no-repeat h-[253px] bg-right-bottom sm:p-[0] p-[10px] overflow-hidden">
         <div className="bg-[url('/images/footer-leaves.png')] bg-no-repeat h-[253px] bg-left-bottom ">
           <div className="w-full h-[253px] flex flex-col justify-around ">
             <div className="flex flex-row items-center justify-around ">
               <div className="w-[377px] h-[122px]">
-                <div className="text-[36px] font-[700] text-[#FF7F3F] mb-[10px]">
+                <div className="sm:text-[36px] text-[20px] font-[700] text-[#FF7F3F] mb-[10px]">
                   Logo
                 </div>
-                <p>
+                <p className="sm:text-[16px] text-[9px] sm:w-[280px] w-[70px]">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 </p>
               </div>
-              <div className="w-[188px] h-[112px]">
+              <div className="w-[380px] h-[112px]">
                 <h2 className="smallHeading mb-[10px]">Company</h2>
-                <p>
+                <p className="sm:text-[16px] text-[9px] sm:w-[280px] w-[90px]">
                   Essential Nutrition Report Personalized Vitamins Dietitian
                   Coaching
                 </p>
               </div>
 
-              <div className="w-[188px] h-[112px]">
-                <h2 className="smallHeading mb-[10px]">Legal</h2>
-                <ul>
+              <div className="w-[380px] h-[112px]">
+                <h2 className="smallHeading mb-[10px] ">Legal</h2>
+                <ul className="sm:text-[16px] text-[9px] sm:w-[280px] w-[80px]">
                   <li>Return Policy</li>
                   <li>Privacy Policy</li>
                   <li>Terms and Servics</li>
                 </ul>
               </div>
 
-              <div className="w-[135px] h-[112px]">
+              <div className="  w-[135px] h-[112px]  ">
                 <h2 className="smallHeading mb-[10px]">Follow Us</h2>
                 <div>
-                  <ul className="flex flex-row justify-between">
+                  <ul className="grid sm:grid-cols-4  grid-cols-2">
                     <li>
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -42,6 +42,7 @@ const Footer = () => {
                         height="30"
                         viewBox="0 0 30 30"
                         fill="none"
+                        className="social"
                       >
                         <circle
                           cx="15"
@@ -63,6 +64,7 @@ const Footer = () => {
                         height="30"
                         viewBox="0 0 30 30"
                         fill="none"
+                        className="social"
                       >
                         <circle
                           cx="15"
@@ -84,6 +86,7 @@ const Footer = () => {
                         height="30"
                         viewBox="0 0 30 30"
                         fill="none"
+                        className="social"
                       >
                         <circle
                           cx="15"
@@ -111,6 +114,7 @@ const Footer = () => {
                         height="30"
                         viewBox="0 0 30 30"
                         fill="none"
+                        className="social"
                       >
                         <circle
                           cx="15"
@@ -124,12 +128,21 @@ const Footer = () => {
                           fill="#FF7F3F"
                         />
                       </svg>
+                      <style>
+                        {`  @media (max-width: 768px) {
+            
+                          .social {
+                               width: 20px;
+                             }
+                           }
+                          `}
+                      </style>
                     </li>
                   </ul>
                 </div>
               </div>
             </div>
-            <div className="text-center font-[500] text-[18px]">
+            <div className="text-center font-[500] sm:text-[18px] text-[12px]">
               Design & Developed by ZySoftec
             </div>
           </div>

@@ -8,17 +8,17 @@
 
 @layer base {
   .btn {
-    @apply sm:w-[128px] sm:h-[50px] rounded-[25px] border-2 border-solid border-white w-[60px] text-[8px] sm:text-[16px] h-[25px];
+    @apply sm:w-[128px] sm:h-[50px] rounded-[25px] border-2 border-solid border-white w-[74px] text-[8px] sm:text-[16px] h-[31px];
   }
   .stepbtn {
     @apply w-[87px] h-[35px] rounded-[25px] text-[white] bg-[#FF7F3F];
   }
 
   .heading {
-    @apply text-[#146356] text-[40px] font-[700];
+    @apply text-[#146356] sm:text-[40px] sm:font-[700] text-[20px] font-[600];
   }
   .smallHeading {
-    @apply text-[#146356] text-[18px] font-[500];
+    @apply text-[#146356] sm:text-[18px] font-[500] text-[14px];
   }
 }
 
@@ -27,3 +27,4 @@ body {
   box-sizing: border-box;
   overflow-x: hidden;
 }
+
